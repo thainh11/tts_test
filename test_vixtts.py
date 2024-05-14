@@ -210,13 +210,13 @@ language_code_map = {
 print("> Đang nạp mô hình...")
 try:
     if not vixtts_model:
-        vixtts_model = load_model(xtts_checkpoint="/vixtts-demo/model/model.pth",
-                                xtts_config="/vixtts-demo/model/config.json",
-                                xtts_vocab="/vixtts-demo/model/vocab.json")
+        vixtts_model = load_model(xtts_checkpoint="/home/thainh/vixtts-demo/model/model.pth",
+                                xtts_config="/home/thainh/vixtts-demo/model/config.json",
+                                xtts_vocab="/home/thainh/vixtts-demo/model/vocab.json")
 except:
-    vixtts_model = load_model(xtts_checkpoint="/vixtts-demo/model/model.pth",
-                                xtts_config="/vixtts-demo/model/config.json",
-                                xtts_vocab="/vixtts-demo/model/vocab.json")
+    vixtts_model = load_model(xtts_checkpoint="/home/thainh/vixtts-demo/model/model.pth",
+                                xtts_config="/home/thainh/vixtts-demo/model/config.json",
+                                xtts_vocab="/home/thainh/vixtts-demo/model/vocab.json")
 clear_output()
 print("> Đã nạp mô hình")
 
