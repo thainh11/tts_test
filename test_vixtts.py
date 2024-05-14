@@ -6,7 +6,6 @@ normalize_text = True
 verbose = True
 output_chunks = True
 
-from IPython.display import clear_output
 import os
 import string
 import unicodedata
