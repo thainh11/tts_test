@@ -217,12 +217,11 @@ except:
     vixtts_model = load_model(xtts_checkpoint="/home/thainh/vixtts-demo/model/model.pth",
                                 xtts_config="/home/thainh/vixtts-demo/model/config.json",
                                 xtts_vocab="/home/thainh/vixtts-demo/model/vocab.json")
-clear_output()
 print("> Đã nạp mô hình")
 
 if not os.path.exists(reference_audio):
     print("⚠️⚠️⚠️Bạn chưa tải file âm thanh lên. Hãy chọn giọng khác, hoặc tải file của bạn lên ở bên dưới.⚠️⚠️⚠️")
-    audio_file="/content/model/vi_sample.wav"
+    audio_file="/home/thainh/vixtts-demo/model/vi_sample.wav"
 else:
     audio_file = run_tts(vixtts_model,
             lang=language_code_map[language],
