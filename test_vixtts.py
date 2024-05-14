@@ -1,6 +1,6 @@
 language = "Tiếng Việt" # ["Tiếng Việt", "Tiếng Anh","Tiếng Tây Ban Nha", "Tiếng Pháp","Tiếng Đức","Tiếng Ý", "Tiếng Bồ Đào Nha", "Tiếng Ba Lan", "Tiếng Thổ Nhĩ Kỳ", "Tiếng Nga", "Tiếng Hà Lan", "Tiếng Séc", "Tiếng Ả Rập", "Tiếng Trung (giản thể)", "Tiếng Nhật", "Tiếng Hungary", "Tiếng Hàn", "Tiếng Hindi"]
 input_text ="Xin chào, tôi là một công cụ có khả năng chuyển đổi văn bản thành giọng nói tự nhiên, được phát triển bởi nhóm Nón lá."
-reference_audio = "/content/model/samples/nam-truyen-cam.wav" #[ "model/user_sample.wav",  "model/vi_sample.wav",  "model/samples/nam-calm.wav",  "model/samples/nam-cham.wav",  "model/samples/nam-nhanh.wav",  "model/samples/nam-truyen-cam.wav",  "model/samples/nu-calm.wav",  "model/samples/nu-cham.wav",  "model/samples/nu-luu-loat.wav",  "model/samples/nu-nhan-nha.wav",  "model/samples/nu-nhe-nhang.wav"]
+reference_audio = "/home/thainh/vixtts-demo/model/samples/nam-truyen-cam.wav" #[ "model/user_sample.wav",  "model/vi_sample.wav",  "model/samples/nam-calm.wav",  "model/samples/nam-cham.wav",  "model/samples/nam-nhanh.wav",  "model/samples/nam-truyen-cam.wav",  "model/samples/nu-calm.wav",  "model/samples/nu-cham.wav",  "model/samples/nu-luu-loat.wav",  "model/samples/nu-nhan-nha.wav",  "model/samples/nu-nhe-nhang.wav"]
 
 normalize_text = True
 verbose = True
@@ -220,7 +220,7 @@ except:
 print("> Đã nạp mô hình")
 
 if not os.path.exists(reference_audio):
-    print("⚠️⚠️⚠️Bạn chưa tải file âm thanh lên. Hãy chọn giọng khác, hoặc tải file của bạn lên ở bên dưới.⚠️⚠️⚠️")
+    print("Bạn chưa tải file âm thanh lên. Hãy chọn giọng khác, hoặc tải file của bạn lên ở bên dưới.")
     audio_file="/home/thainh/vixtts-demo/model/vi_sample.wav"
 else:
     audio_file = run_tts(vixtts_model,
