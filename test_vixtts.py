@@ -121,7 +121,7 @@ def run_tts(XTTS_MODEL, lang, tts_text, speaker_audio_file,
     if XTTS_MODEL is None or not speaker_audio_file:
         return "You need to run the previous step to load the model !!", None, None
 
-    output_dir = "./output"
+    output_dir = "/home/thainh/tts_test/output"
     os.makedirs(output_dir, exist_ok=True)
 
     gpt_cond_latent, speaker_embedding = XTTS_MODEL.get_conditioning_latents(
