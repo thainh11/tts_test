@@ -44,7 +44,7 @@ def load_model(xtts_checkpoint, xtts_config, xtts_vocab):
     XTTS_MODEL.load_checkpoint(config,
                                checkpoint_path=xtts_checkpoint,
                                vocab_path=xtts_vocab,
-                               use_deepspeed=True)
+                               use_deepspeed=False)
     if torch.cuda.is_available():
         XTTS_MODEL.cuda()
 
